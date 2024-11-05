@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Survey</title>
+</head>
+<body>
+    <h2>Loan Approval Survey</h2>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+        <div>
+            <label for="gender">{{ form.gender.label }}</label><br>
+            {{ form.gender() }}
+        </div>
+        <div>
+            <label for="own_car">{{ form.own_car.label }}</label><br>
+            {{ form.own_car() }}
+        </div>
+        <div>
+            <label for="own_estate">{{ form.own_estate.label }}</label><br>
+            {{ form.own_estate() }}
+        </div>
+        <div>
+            <label for="mobile_flag">{{ form.mobile_flag.label }}</label><br>
+            {{ form.mobile_flag() }}
+        </div>
+        <div>
+            <label for="num_children">{{ form.num_children.label }}</label><br>
+            {{ form.num_children() }}
+        </div>
+        <div>
+            <label for="income_type">{{ form.income_type.label }}</label><br>
+            {{ form.income_type() }}
+        </div>
+        <div>
+            <label for="income_total">{{ form.income_total.label }}</label><br>
+            {{ form.income_total() }}
+        </div>
+        <div>
+            <label for="education_type">{{ form.education_type.label }}</label><br>
+            {{ form.education_type() }}
+        </div>
+        <div>
+            <label for="family_status">{{ form.family_status.label }}</label><br>
+            {{ form.family_status() }}
+        </div>
+        <div>
+            <label for="housing_type">{{ form.housing_type.label }}</label><br>
+            {{ form.housing_type() }}
+        </div>
+        <div>
+            <label for="age">{{ form.age.label }}</label><br>
+            {{ form.age() }}
+        </div>
+        <div>
+            <label for="job_status">{{ form.job_status.label }}</label><br>
+            {{ form.job_status() }}
+        </div>
+        <div>
+            <label for="job_start_date">{{ form.job_start_date.label }}</label><br>
+            {{ form.job_start_date() }}
+        </div>
+        <div>
+            <label for="mobile">{{ form.mobile.label }}</label><br>
+            {{ form.mobile() }}
+        </div>
+        <div>
+            <label for="work_phone">{{ form.work_phone.label }}</label><br>
+            {{ form.work_phone() }}
+        </div>
+        <div>
+            <label for="mobile_phone">{{ form.mobile_phone.label }}</label><br>
+            {{ form.mobile_phone() }}
+        </div>
+        <div>
+            <label for="email">{{ form.email.label }}</label><br>
+            {{ form.email() }}
+        </div>
+        <div>
+            <label for="occupation">{{ form.occupation.label }}</label><br>
+            {{ form.occupation() }}
+        </div>
+        <div>
+            <label for="num_family_members">{{ form.num_family_members.label }}</label><br>
+            {{ form.num_family_members() }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+</body>
+</html>
